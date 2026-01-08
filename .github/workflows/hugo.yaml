@@ -25,7 +25,6 @@ jobs:
     env:
       HUGO_VERSION: 0.128.0 # 建议填一个较新的版本
       HUGO_ENV: production
-      HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache_dir
     steps:
       - name: Checkout
         uses: actions/checkout@v4
