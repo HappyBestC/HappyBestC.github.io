@@ -1,0 +1,71 @@
+baseURL: "https://HappyBestC.github.io/"
+languageCode: "zh-cn"
+title: "HappyBestC's Log"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+# 核心功能增强
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 代码与公式渲染
+markup:
+  highlight:
+    style: dracula
+    lineNos: true
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+# 菜单配置
+menu:
+  main:
+    - identifier: tech
+      name: 💻 技术栈
+      url: /tech/
+      weight: 10
+    - identifier: life
+      name: 📸 生活圈
+      url: /life/
+      weight: 20
+    - identifier: archives
+      name: ⏱ 归档
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: 🔍 搜索
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: 🙋🏻‍♂️ 关于
+      url: /about/
+      weight: 50
+
+# 主题参数
+params:
+  env: production
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  math: true 
+  
+  homeInfoParams:
+    Title: "Hi there, I'm Cai 👋"
+    Content: >
+      BUPT CS Master Student.
+      Researching in XR/VR & 3D Reconstruction.
+  
+  socialIcons:
+    - name: github
+      url: "https://github.com/HappyBestC"
